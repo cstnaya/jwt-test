@@ -40,6 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        /* create another auth guard which use jwt as driver */
+        'sub' => [
+            'driver' => 'jwt',
+            'provider' => 'subusers',
+        ],
     ],
 
     /*
@@ -69,6 +75,10 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'subusers' => [
+            'driver' => "eloquent",
+            'model' => App\Models\SubUser::class,
+        ],
     ],
 
     /*

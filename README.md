@@ -10,6 +10,12 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 2. Create new route "sub" in /routes folder.  Then register this route in app/providers/RouteServeiceProvider.php. [[See details]](https://www.itsolutionstuff.com/post/how-to-create-custom-route-file-in-laravelexample.html)
 
+3. create new guard and provider in config/auth.php.
+
+4. migrate subUser table and create its model.
+
+5. create controller and authentication with auth("sub").
+
 ## Resource
 
 - https://www.youtube.com/watch?v=6eX9Pj-GhZs

@@ -18,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return 'sub routes! Hello world!';
 });
+
+Route::post('login', 'App\Http\Controllers\sub\LoginController@login');
