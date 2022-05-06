@@ -6,9 +6,12 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## First you need to do
 
-1. download auth-jwt package [here](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/)
+1. Install auth-jwt package [here](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/) and follow the instruction to config your project.
+
+2. Create new route "sub" in /routes folder.  Then register this route in app/providers/RouteServeiceProvider.php. [[See details]](https://www.itsolutionstuff.com/post/how-to-create-custom-route-file-in-laravelexample.html)
 
 ## Resource
 
 - https://www.youtube.com/watch?v=6eX9Pj-GhZs
 - https://jwt-auth.readthedocs.io/en/develop/
+- https://www.itsolutionstuff.com/post/how-to-create-custom-route-file-in-laravelexample.html
