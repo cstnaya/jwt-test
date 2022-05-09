@@ -16,8 +16,25 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 5. create controller and authentication with auth("sub").
 
+## Then start using Sanctum
+
+1. Follow this [tutorial](https://laravel.com/docs/9.x/sanctum#installation) to install package sanctum.
+
+2. create new guard in config/auth.php
+
+3. create controller, route api and authentication with auth api.
+
+4. you don't need to add middleware('auth:sanctum') for login and register route.
+
+5. After you got token when logging, add key-value pair in header: (Authorization, "Bearer $token-here")
+
+## Error
+
+- If you faced <span style="color: #f33">Route [login] not defined.</span> error when using Sanctum, follow this [advice](https://stackoverflow.com/a/69903806) to resolve your problem.
+
 ## Resource
 
 - https://www.youtube.com/watch?v=6eX9Pj-GhZs
 - https://jwt-auth.readthedocs.io/en/develop/
 - https://www.itsolutionstuff.com/post/how-to-create-custom-route-file-in-laravelexample.html
+- https://www.twilio.com/blog/build-restful-api-php-laravel-sanctum
