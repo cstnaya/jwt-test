@@ -41,6 +41,11 @@ return [
             'provider' => 'users',
         ],
 
+        'web-thermal' => [
+            'driver' => 'session',
+            'provider' => 'subusers',
+        ],
+
         /* create another auth guard which use jwt as driver */
         'sub' => [
             'driver' => 'jwt',
